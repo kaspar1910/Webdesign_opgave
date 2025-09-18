@@ -1,47 +1,63 @@
+
+/* style for the background image made in figma ;) jeg skriver i engelsk for swag skyld*/
 body {
-    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    background-image: url("Static/background.svg");
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    
+    font-family: "Inter Semi Bold";      
     text-align: center;
-    font-family: "Inter Semi Bold";
+}
+
+/* Fjerner linjen under et link til text */
+
+a {
+    text-decoration: none;
+    color: white; 
 }
 
 .box {
-    width: 800px;
+    width: auto;
     height:1400px;
-    background-color: darkgreen;
-    border: 2px solid mediumseagreen;
     margin: auto;
-    box-shadow: 0px 4px 10px 3px gray;
 }
 
 .header_box {
-    border: 2px solid mediumseagreen;
-    width: 800px;
+    width: auto;
     height: 100px;
-    background-color: greenyellow;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
     align-content: center;
-    box-shadow: 0px 4px 10px gray;
 }
 
 .text_box {
-    width: 800px;
+    width: auto;
     height: 100px;
-    background-color: forestgreen;
     margin: auto;
     margin-bottom: 50px;
     align-content: center;
 }
 
+
+/* Text and button styles, the button has gradients whooooooo kom nu lidt*/
+
 #bottom_box {
-    width: 400px;
-    height: 100px;
-    background-color: forestgreen;
+    width: 200px;
+    height: 75px;
     margin: auto;
     margin-bottom: 25px;
     align-content: center;
-    box-shadow: 0px 2px 5px mediumseagreen;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, lightgreen, olive);
+}
+
+#bottom_box:hover {
+    background: linear-gradient(to bottom, olive, lightgreen);
+    box-shadow: 0px 1px 5px darkgreen;
+    cursor: pointer;
 }
 
 .header_text_settings {
@@ -53,4 +69,26 @@ body {
 .text_settings {
     font-size: 20px;
     color: white;
+}
+
+
+/* Styles for shadows in the edges of the screen look very cool:) */
+
+.side-fade {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 20vw; /* 1/5 of the screen */
+    pointer-events: none; /* lets you click through them */
+    z-index: 999; /* on top of background */
+}
+
+.left-fade {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.right-fade {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
 }

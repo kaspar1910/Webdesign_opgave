@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kaspa\\Desktop\\Garden_website_gg\\Garden_website_gg\\Garden_website_gg.csproj",
+      "projectUniqueName": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
       "projectName": "Garden_website_gg",
-      "projectPath": "C:\\Users\\kaspa\\Desktop\\Garden_website_gg\\Garden_website_gg\\Garden_website_gg.csproj",
+      "projectPath": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
       "packagesPath": "C:\\Users\\kaspa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kaspa\\Desktop\\Garden_website_gg\\Garden_website_gg\\obj\\",
+      "outputPath": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kaspa\\AppData\\Roaming\\NuGet\\NuGet.Config"
