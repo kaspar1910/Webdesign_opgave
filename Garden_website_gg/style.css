@@ -1,15 +1,73 @@
+/* style for the background image made in figma ;) jeg skriver i engelsk for swag skyld  der kan ændres imellem background 1 eller 2
 
-/* style for the background image made in figma ;) jeg skriver i engelsk for swag skyld*/
+Color pallete:
+1: #F2E0DF - #FF8128
+2: #BDCDCF - #003332
+3: #E3B8B8 - #034C36
+4: #034C36 - #003332
+*/
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url("Static/background.svg");
-    background-size: cover;       
-    background-repeat: no-repeat; 
-    
+    background-size: cover;
+    background: linear-gradient(to top, #E3B8B8, #034C36);
     font-family: "Inter Semi Bold";      
     text-align: center;
 }
+
+.background_style{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    animation: background_animation;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
+}
+
+.bg1{
+    background-image: url("Static/Background/Frame 1.svg");
+    animation-delay: 0s;
+}
+
+.bg2{
+    background-image: url("Static/Background/Frame 2.svg");
+    animation-delay: 4s;
+}
+
+.bg3{
+    background-image: url("Static/Background/Frame 3.svg");
+    animation-delay: 8s;
+}
+
+.bg4{
+    background-image: url("Static/Background/Frame 4.svg");
+    animation-delay: 12s;
+}
+
+@keyframes background_animation {
+    0% {
+    opacity: 0;
+    }
+    12.5%{
+        opacity: 1;
+    }
+    37.5%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 
 /* Fjerner linjen under et link til text */
 
@@ -18,57 +76,9 @@ a {
     color: white; 
 }
 
-.box {
-    width: auto;
-    height:1400px;
-    margin: auto;
-}
-
-.header_box {
-    width: auto;
-    height: 100px;
-    margin: auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    align-content: center;
-}
-
-.text_box {
-    width: auto;
-    height: 100px;
-    margin: auto;
-    margin-bottom: 50px;
-    align-content: center;
-}
-
-
-/* Text and button styles, the button has gradients whooooooo kom nu lidt*/
-
-#bottom_box {
-    width: 200px;
-    height: 75px;
-    margin: auto;
-    margin-bottom: 25px;
-    align-content: center;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, lightgreen, olive);
-}
-
-#bottom_box:hover {
-    background: linear-gradient(to bottom, olive, lightgreen);
-    box-shadow: 0px 1px 5px darkgreen;
-    cursor: pointer;
-}
-
-.header_text_settings {
-    color: white;
-    font-size: 35px;
-    text-shadow: 2px 0px 5px darkslategray;
-}
-
-.text_settings {
-    font-size: 20px;
-    color: white;
+.content {
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -78,8 +88,8 @@ a {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 20vw; /* 1/5 of the screen */
-    pointer-events: none; /* lets you click through them */
+    width: 20vw; 
+    pointer-events: none; 
     z-index: 999; /* on top of background */
 }
 
@@ -91,4 +101,157 @@ a {
 .right-fade {
     right: 0;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main page content */
+.content_box{
+    width: 100%;
+    height: 100vh;
+}
+
+.header_tab{
+    width: 100%;
+    height: 125px;
+    align-content: center;
+}
+
+.header_box{
+    margin: auto;
+    background: linear-gradient(to right, #F2E0DF, #FF8128, #F2E0DF);
+    background-size: 400% 400%;
+    width: 325px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow:
+            inset 0 0 10px rgba(0, 0, 0, 0.2);
+    background-position: 0% 50%;
+    transition: background-position 1.5s ease-in-out, transform 0.3s ease;
+    user-select: none;
+}
+
+.header_box:hover{
+    background-position: 100% 50%;
+    transform: scale(1.10);
+}
+
+.gradient-text {
+    margin-top: 0;
+    padding-top: 8px;
+    color: #121212;
+    text-shadow: 1px 1px 10px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left_line{
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dotted_line{
+    width: 10px;
+    height: 1000px;
+    background-image: url("Static/Concept pics/dotted_line.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+.main_page_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #E3B8B8, #034C36, #E3B8B8);
+    background-size: 400% 400%;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    box-shadow:
+            inset 0 0 10px rgba(0, 0, 0, 0.2);
+    background-position: 0% 50%;
+    transition: background-position 1.5s ease-in-out, transform 0.3s ease;
+    user-select: none;
+}
+
+.button_text {
+    color: #121212;
+    text-shadow: 1px 1px 10px #000;
+}
+
+
+.main_page_button:hover{
+    background-position: 100% 50%;
+    transform: scale(1.10);
+}
+
+
+
+.right-text{
+    width:75%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    background: #003332;
+    opacity: 20%;
 }
