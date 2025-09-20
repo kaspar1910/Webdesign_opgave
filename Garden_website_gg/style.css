@@ -28,6 +28,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     z-index: -1;
+    will-change: opacity;
 }
 
 .bg1{
@@ -146,16 +147,15 @@ a {
 .header_box{
     margin: auto;
     background: linear-gradient(to right, #F2E0DF, #FF8128, #F2E0DF);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     width: 325px;
     height: 50px;
     text-align: center;
     border-radius: 25px;
-    box-shadow:
-            inset 0 0 10px rgba(0, 0, 0, 0.2);
     background-position: 0% 50%;
     transition: background-position 1.5s ease-in-out, transform 0.3s ease;
     user-select: none;
+    will-change: transform, background-position;
 }
 
 .header_box:hover{
@@ -167,7 +167,6 @@ a {
     margin-top: 0;
     padding-top: 8px;
     color: #121212;
-    text-shadow: 1px 1px 10px #000;
 }
 
 
@@ -210,32 +209,26 @@ a {
 
 .dotted_line{
     width: 10px;
-    height: 1000px;
+    height: 700px;
     background-image: url("Static/Concept pics/dotted_line.svg");
     background-repeat: no-repeat;
-    margin-bottom: 0;
+    padding-bottom: 4vh;
 }
 
 .main_page_button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 145px;
     background: linear-gradient(to right, #E3B8B8, #034C36, #E3B8B8);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     width: 150px;
     height: 35px;
     border-radius: 25px;
-    box-shadow:
-            inset 0 0 10px rgba(0, 0, 0, 0.2);
     background-position: 0% 50%;
     transition: background-position 1.5s ease-in-out, transform 0.3s ease;
     user-select: none;
-}
-
-.button_text {
-    color: #121212;
-    text-shadow: 1px 1px 10px #000;
+    will-change: transform, background-position;
 }
 
 
@@ -244,14 +237,33 @@ a {
     transform: scale(1.10);
 }
 
-
+.button_text {
+    color: #121212;
+}
 
 .right-text{
     width:75%;
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 800px;
-    background: #003332;
-    opacity: 20%;
+}
+
+.first_row{
+    display: flex;
+    height: 380px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+
+.second_row{
+    display: flex;
+    height: 380px;
+    width: 100%;
+    margin-top: 10px;
+    color: #121212;
 }
