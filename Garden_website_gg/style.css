@@ -190,9 +190,14 @@ a {
 
 
 .main_section{
+    color: floralwhite;
     display: flex;
     min-height: calc(100vh - 125px);
     width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .animation.button{
@@ -217,25 +222,18 @@ a {
     transform: scale(1.10);
 }
 
-.rows{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.right-text{
-    width:100%;
+.main-text{
+    padding: 75px;
+    background: #222021;
+    opacity: 0.85;
+    width:65%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 800px;
-    padding-top: 8vh;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px #121212;
 }
 
-.second_row{
-    display: flex;
-    height: 380px;
-    width: 100%;
-    color: #121212;
-}
