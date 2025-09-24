@@ -7,12 +7,21 @@ Color pallete:
 4: #034C36 - #003332
 */
 
+
+/* custom font */
+@font-face {
+    font-family: 'Hollowknightfont';
+    src: url('Fonts/Hollow_knight_font/Trajan Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: Hollowknightfont;
     margin: 0;
     padding: 0;
     background-size: cover;
     background: linear-gradient(to top, #E3B8B8, #034C36);
-    font-family: "Inter Semi Bold";      
     text-align: center;
 }
 
@@ -42,7 +51,7 @@ body {
 }
 
 .bg3{
-    background-image: url("Static/Background/Frame 3.svg");
+    background-image: url("Static/Background/johnny.svg");
     animation-delay: 8s;
 }
 
@@ -80,6 +89,8 @@ a {
 .content {
     position: relative;
     z-index: 1;
+    min-height: 100vh;
+    width: 100%;
 }
 
 
@@ -118,31 +129,17 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Main page content */
-.content_box{
-    width: 100%;
-    height: 100vh;
-}
-
 .header_tab{
     width: 100%;
     height: 125px;
     align-content: center;
+    background: #121212;
+    backdrop-filter: blur(20px);
+    opacity: 0.75;
+    box-shadow: 0 2px 2px 1px #000;
 }
+
+
 
 .header_box{
     margin: auto;
@@ -166,7 +163,7 @@ a {
 .gradient-text {
     margin-top: 0;
     padding-top: 8px;
-    color: #121212;
+    color: floralwhite;
 }
 
 
@@ -194,7 +191,7 @@ a {
 
 .main_section{
     display: flex;
-    height: 100vh;
+    min-height: calc(100vh - 125px);
     width: 100%;
 }
 
@@ -204,15 +201,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-}
-
-.dotted_line{
-    width: 10px;
-    height: 700px;
-    background-image: url("Static/Concept pics/dotted_line.svg");
-    background-repeat: no-repeat;
-    padding-bottom: 4vh;
+    justify-content: flex-start;
 }
 
 .main_page_button{
@@ -220,7 +209,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-bottom: 145px;
-    background: linear-gradient(to right, #E3B8B8, #034C36, #E3B8B8);
+    background: linear-gradient(to right, #121212, navajowhite, #121212);
     background-size: 200% 200%;
     width: 150px;
     height: 35px;
@@ -229,6 +218,7 @@ a {
     transition: background-position 1.5s ease-in-out, transform 0.3s ease;
     user-select: none;
     will-change: transform, background-position;
+    margin-top: 10vh;
 }
 
 
@@ -238,7 +228,7 @@ a {
 }
 
 .button_text {
-    color: #121212;
+    color: floralwhite;
 }
 
 .right-text{
@@ -249,6 +239,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     height: 800px;
+    margin-top: 8vh;
 }
 
 .first_row{

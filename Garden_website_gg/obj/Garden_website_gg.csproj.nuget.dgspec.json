@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj": {}
+    "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj": {
+    "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
+        "projectUniqueName": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
         "projectName": "Garden_website_gg",
-        "projectPath": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
-        "packagesPath": "C:\\Users\\kaspa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaspa\\Desktop\\Code\\Webdesign_opgave\\Garden_website_gg\\obj\\",
+        "projectPath": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
+        "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kaspa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
