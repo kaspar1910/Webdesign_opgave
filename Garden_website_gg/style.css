@@ -237,3 +237,65 @@ a {
     box-shadow: 2px 2px 2px 1px #121212;
 }
 
+.daily-tracker-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%; /* fill out box to max :) */
+    height: 100%; /* fill out box to max :( */
+    flex-grow: 1;
+}
+
+.day-container {
+    background-color: #222021;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 1px #121212;
+    padding: 10px;
+    flex-grow: 1;
+    height: 100%; /* fill out height*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-header{
+    background: #034C36;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: floralwhite;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.homework-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.homework-item {
+    background-color: #3e3a39;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.homework-checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+} 
+
+.completed{
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
