@@ -1,0 +1,5 @@
+/Users/niels-just/3.semester/Web Technologies, (E25)/Webdesign_opgave/Garden_website_gg/obj/Debug/net9.0/Garden_website_gg.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niels-just/3.semester/Web Technologies, (E25)/Webdesign_opgave/Garden_website_gg/obj/Debug/net9.0/Garden_website_gg.AssemblyInfoInputs.cache
+/Users/niels-just/3.semester/Web Technologies, (E25)/Webdesign_opgave/Garden_website_gg/obj/Debug/net9.0/Garden_website_gg.AssemblyInfo.cs
+/Users/niels-just/3.semester/Web Technologies, (E25)/Webdesign_opgave/Garden_website_gg/obj/Debug/net9.0/Garden_website_gg.csproj.CoreCompileInputs.cache
+/Users/niels-just/3.semester/Web Technologies, (E25)/Webdesign_opgave/Garden_website_gg/obj/Debug/net9.0/Garden_website_gg.sourcelink.json
