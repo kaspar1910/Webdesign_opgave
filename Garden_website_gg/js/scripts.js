@@ -70,18 +70,95 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function displayHomework() {
     const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
-    const ids = ['mon_container', 'tue_container', 'wed_container', 'thu_container', 'fri_container', 'sat_container', 'sun_container'];
 
-    days.forEach((day, daynumber) => {
-        let container = document.getElementById(ids[daynumber]);
+    days.forEach(function(day) {
+        const containerId = day.substring(0, 3) + '_container'; // Creates the mon_container, tus_conater and so on - bruger de 3 første bogstaver i dagen :) Det samme som du gjorder
+        let container = document.getElementById(containerId); //Document reffers to the entire html - matcher container with <ul> in hitml :9
+
         if (container) {
-            container.innerHTML = '';
+            container.innerHTML = ''; // Clear list - Nulstil listen :)
 
-            homeworkcontent[day].forEach((subject) => {
-                let daytext = document.createElement('daytext');
-                daytext.textContent = subject;
-                container.appendChild(daytext);
+            // Loop through homework and create list items with buttons - mener om C#
+            homeworkcontent[day].forEach((subject, index) => {
+                const listItem = document.createElement('li');
+                listItem.className = 'homework-item'; 
+
+                const subjectText = document.createElement('span');
+                subjectText.textContent = subject;
+
+                const buttonContainer = document.createElement('div');
+                buttonContainer.className = 'item-buttons';
+
+                const editBtn = document.createElement('button');
+                editBtn.textContent = '✎';
+                editBtn.className = 'edit-btn';
+                editBtn.title = 'Edit homework';
+                editBtn.onclick = () => editHomeworkFromBoard(day, index); // Edit function - rediger allrede tilføjet også upload
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = '✖';
+                deleteBtn.className = 'delete-btn';
+                deleteBtn.title = 'Delete homework';
+                deleteBtn.onclick = () => deleteHomeworkFromBoard(day, index); // Delete function - slet
+
+                buttonContainer.appendChild(editBtn);
+                buttonContainer.appendChild(deleteBtn);
+                listItem.appendChild(subjectText);
+                listItem.appendChild(buttonContainer);
+                container.appendChild(listItem);
             });
+
+            // Create and add the '+' button at the end of the list
+            const addListItem = document.createElement('li');
+            const addBtn = document.createElement('button');
+            addBtn.className = 'add-homework-btn';
+            addBtn.textContent = '+';
+            addBtn.title = 'Add new homework';
+            addBtn.onclick = () => addHomeworkToBoard(day); // Add function - man kan også tilføje uden at uploade
+
+            addListItem.appendChild(addBtn);
+            container.appendChild(addListItem);
         }
     });
 }
+
+function addHomeworkToBoard(day){
+    const capitalizedDay = day.charAt(0).toUpperCase() + day.slice(1);
+    const subject = prompt (`Enter homework subject for ${capitalizedDay}`);
+    
+    //If the user didnt cancel after entering value, (smart hvis det sker kap)
+    if (subject && subject.trim() !== '')
+    {
+        homeworkcontent[day].push(subject.trim());
+        sessionStorage.setItem('homeworkcontent', JSON.stringify(homeworkcontent));
+        displayHomework(); //this "loads" the list again <--
+    }
+}
+
+function deleteHomeworkFromBoard(day,index) {
+    if (confirm(`Are you sure you want to delete this homework? "${homeworkcontent[day][index]}"?`)) 
+    {
+        homeworkcontent[day].splice(index, 1);
+        sessionStorage.setItem('homeworkcontent', JSON.stringify(homeworkcontent));
+        displayHomework();
+    }
+}
+
+function editHomeworkFromBoard(day, index) {
+    const currentSubject = homeworkcontent[day][index];
+    const newSubject = prompt("Edit your homework subject:", currentSubject);
+    
+    if (newSubject !== null && newSubject.trim() !== '') 
+    {
+        homeworkcontent[day][index] = newSubject.trim();
+        sessionStorage.setItem('homeworkcontent', JSON.stringify(homeworkcontent));
+        displayHomework();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() 
+{
+    if (document.getElementById('mon_container')) {
+        displayHomework();
+    }
+})
