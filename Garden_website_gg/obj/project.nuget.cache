@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x7/4Mw7iuMQ=",
+  "dgSpecHash": "U9sXwqcYFe0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/kap1910/Desktop/Webdesign_opgave/Garden_website_gg/Garden_website_gg.csproj",
+  "expectedPackageFiles": [
+    "/home/kap1910/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
   "logs": []
 }

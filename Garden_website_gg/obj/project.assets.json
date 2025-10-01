@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kap\\.nuget\\packages\\": {}
+    "/home/kap1910/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
+      "projectUniqueName": "/home/kap1910/Desktop/Webdesign_opgave/Garden_website_gg/Garden_website_gg.csproj",
       "projectName": "Garden_website_gg",
-      "projectPath": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\Garden_website_gg.csproj",
-      "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kap\\Desktop\\Webdesign_opgave\\Garden_website_gg\\obj\\",
+      "projectPath": "/home/kap1910/Desktop/Webdesign_opgave/Garden_website_gg/Garden_website_gg.csproj",
+      "packagesPath": "/home/kap1910/.nuget/packages/",
+      "outputPath": "/home/kap1910/Desktop/Webdesign_opgave/Garden_website_gg/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/kap1910/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -60,12 +60,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.9, 9.0.9]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
